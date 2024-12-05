@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSAU App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="app" style="height: 100%; display: flex; flex-direction: column;">
+    <!-- Navigation -->
+    <nav style="display: flex; justify-content: center; gap: 1rem; padding: 1rem;">
+      <button style="background-color: #ff69b4; color: white; border-radius: 8px;" onclick="navigateTo('documents')">Documents</button>
+      <button style="background-color: #ff69b4; color: white; border-radius: 8px;" onclick="navigateTo('favorites')">Favorites</button>
+    </nav>
+
+    <!-- App Content -->
+    <div id="content" style="margin-top: 1rem;"></div>
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
